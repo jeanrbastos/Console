@@ -1,7 +1,7 @@
 # Console
 This library (for .NET) it is a helper to manage the parameters on a console application.
 
-Example
+Simple Example
 =======
 
 Install using Nuget
@@ -43,4 +43,22 @@ The result in console is it:
 ```
     C:\ExampleApplication\bin\Debug>YouProject.exe arg1
     Do somethink 1
+```
+
+With Parameters
+=======
+
+If you need pass parameters for the works class do it:
+
+``` csharp
+    static void Main(string[] args)
+    {
+        var changer = new Changer();
+        var manager = new Bastos.Console.SimpleParameterManager();
+
+        manager.RegisterCommand("file", () => new File(changer));
+        manager.RegisterCommand("webservice", () => new WebService(changer));
+
+        manager.Process(args);
+    }
 ```
