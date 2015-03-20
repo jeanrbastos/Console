@@ -29,7 +29,7 @@ Now just create and configure the parameter manager.
     {
         static void Main(string[] args)
         {
-            SimpleParameterManager manager = new SimpleParameterManager();
+            var manager = new SimpleParameterManager();
             manager.RegisterCommand<Worker1>("arg1");
             manager.RegisterCommand<Worker2>("arg2");
 
