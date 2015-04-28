@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExampleApplication
 {
-    public class Worker1 : Bastos.Console.IConsoleCommand
+    public class Worker1 : Bastos.Console.Simple.ISimpleConsoleCommand
     {
         public void Execute()
         {

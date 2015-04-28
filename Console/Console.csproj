@@ -42,15 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IConsoleCommand.cs" />
-    <Compile Include="IParameterManager.cs" />
-    <Compile Include="ItemCommand.cs" />
-    <Compile Include="ParameterManager.cs" />
+    <Compile Include="Core\IConsoleCommand.cs" />
+    <Compile Include="KeyValue\IKeyValueConsoleCommand.cs" />
+    <Compile Include="Simple\ISimpleConsoleCommand.cs" />
+    <Compile Include="Core\IItemCommand.cs" />
+    <Compile Include="Core\IParameterManager.cs" />
+    <Compile Include="KeyValue\KeyValueItemCommand.cs" />
+    <Compile Include="Core\ParameterManagerBase.cs" />
+    <Compile Include="Simple\SimpleItemCommand.cs" />
+    <Compile Include="KeyValue\KeyValueParameterManager.cs" />
+    <Compile Include="Simple\SimpleParameterManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="console.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

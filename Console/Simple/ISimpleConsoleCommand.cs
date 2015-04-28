@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bastos.Console
+namespace Bastos.Console.Simple
 {
     /// <summary>
     /// Implement this interface for represent a command.
     /// </summary>
-    public interface IConsoleCommand
+    public interface ISimpleConsoleCommand : Core.IConsoleCommand
     {
         /// <summary>
         /// Called when command registered is passed.

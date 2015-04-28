@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bastos.Console
+namespace Bastos.Console.Core
 {
     /// <summary>
     /// Represents a parameter manager.

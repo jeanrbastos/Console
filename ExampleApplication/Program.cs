@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Bastos.Console;
+﻿using Bastos.Console.KeyValue;
+using Bastos.Console.Simple;
 
 namespace ExampleApplication
 {
@@ -11,7 +7,7 @@ namespace ExampleApplication
     {
         static void Main(string[] args)
         {
-            SimpleParameterManager manager = new SimpleParameterManager();
+            var manager = new SimpleParameterManager();
             manager.RegisterCommand<Worker1>("arg1");
             manager.RegisterCommand<Worker2>("arg2");
 

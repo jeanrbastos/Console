@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Bastos.Console;
+using Bastos.Console.Simple;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Console.Test
@@ -160,7 +160,7 @@ namespace Console.Test
             Assert.IsTrue(texto.Contains("Description arg2"));
         }
 
-        private class CommandStub : IConsoleCommand
+        private class CommandStub : ISimpleConsoleCommand
         {
             public CommandStub() { }
 
@@ -175,7 +175,7 @@ namespace Console.Test
             }
         }
 
-        private class CommandStub2 : IConsoleCommand
+        private class CommandStub2 : ISimpleConsoleCommand
         {
             public CommandStub2() { }
 

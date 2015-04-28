@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bastos.Console
+namespace Bastos.Console.Simple
 {
-    internal sealed class ItemCommand
+    public sealed class SimpleItemCommand : Core.IItemCommand
     {
-        public Func<IConsoleCommand> Activator { get; set; }
+        public Func<Core.IConsoleCommand> Activator { get; set; }
 
         public string Description { get; set; }
     }
