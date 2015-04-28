@@ -76,3 +76,9 @@ Key Value Parameters
         manager.Process(args);
     }
 ```
+The result in console is it:
+
+```
+    C:\ExampleApplication\bin\Debug>YouProject.exe arg1 otherArg:value1
+    Do somethink 1
+```
