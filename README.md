@@ -62,3 +62,17 @@ If you need pass parameters for the works class do it:
         manager.Process(args);
     }
 ```
+
+Key Value Parameters
+=======
+
+```csharp
+    static void Main(string[] args)
+    {
+        var manager = new KeyValueParameterManager();
+        manager.RegisterCommand<Worker1>("arg1");
+        manager.RegisterCommand<Worker2>("arg2");
+
+        manager.Process(args);
+    }
+```
